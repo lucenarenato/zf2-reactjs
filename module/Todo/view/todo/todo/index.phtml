@@ -1,0 +1,28 @@
+<?php
+ // module/Todo/view/todo/todo/index.phtml:
+
+ $title = 'My Todos';
+ $this->headTitle($title);
+ ?>
+ <h1><?php echo $this->escapeHtml($title); ?></h1>
+ <p>
+     <a href="<?php echo $this->url('todo', array('action'=>'add'));?>">Add new todo</a>
+ </p>
+
+ <table class="table">
+ <tr>
+     <th>Todo</th>
+     <th>Actions</th>
+ </tr>
+ <?php foreach ($todo as $td) : ?>
+ <tr>
+     <td><?php echo $this->escapeHtml($td->name);?></td>
+     <td>
+         <a href="<?php echo $this->url('todo',
+             array('action'=>'edit', 'id' => $td->id));?>">Edit</a>
+         <a href="<?php echo $this->url('todo',
+             array('action'=>'delete', 'id' => $td->id));?>">Delete</a>
+     </td>
+ </tr>
+ <?php endforeach; ?>
+ </table>
