@@ -1,7 +1,8 @@
 ZendSkeletonApplication
 =======================
 
-zend framework 2 development
+## student zend framework 2 development, implement reactjs
+<p align="center"><a href="https://github.com/lucenarenato" target="_blank"><img src="print.png" width="500"></a></p>
 
 `composer global require composer/composer`
 `npm install`
@@ -16,6 +17,8 @@ $ php -S 0.0.0.0:8080 -t public/ public/index.php
 # OR use the composer alias:
 $ composer serve
 ```
+
+<p align="center"><a href="https://github.com/lucenarenato" target="_blank"><img src="house_building.jpg" width="400"></a></p>
 
 
 rm `"siad007/zf2-reactjs-module": "dev-master"`
@@ -37,3 +40,5 @@ removido layout
 
               echo $script;
         ?>
+
+## Renato Lucena 12/2020        
