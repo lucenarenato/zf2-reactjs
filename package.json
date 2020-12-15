@@ -32,14 +32,22 @@
     "react-scripts": "3.0.1",
     "react-with-addons": "0.0.1",
     "redux": "^3.6.0",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "styled-components": "^5.1.1",
+    "styled-icons": "^10.19.0",
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^6.4.1",
+    "babel-plugin-styled-components": "^1.11.1",
+    "@babel/preset-typescript": "^7.10.4",
+    "@storybook/addon-essentials": "6.0.16",
+    "@storybook/react": "6.0.16",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.24.1",
+    "@testing-library/react": "^10.4.9",
     "css-loader": "^0.26.2",
     "file-loader": "^0.10.1",
     "node-sass": "^4.5.0",
@@ -48,6 +56,7 @@
     "sass-loader": "^6.0.2",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
+    "typescript": "^4.0.2",
     "webpack": "^2.2.1",
     "webpack-merge": "^3.0.0",
     "webpack-validator": "^2.3.0"
