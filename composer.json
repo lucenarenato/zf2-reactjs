@@ -11,6 +11,25 @@
         "php": ">=5.3.3",
         "zendframework/zendframework": "~2.5",
         "dino/dompdf-module": "dev-master",
-        "reactjs/react-php-v8js": "^2.0"
+        "reactjs/react-php-v8js": "^2.0",
+        "limenius/react-renderer": "^5.0",
+        "zendframework/zend-component-installer": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "development-disable": "zf-development-mode disable",
+        "development-enable": "zf-development-mode enable",
+        "development-status": "zf-development-mode status",
+        "post-create-project-cmd": [
+            "@development-enable"
+        ],
+        "serve": "php -S 0.0.0.0:8080 -t public public/index.php",
+        "test": "phpunit"
     }
 }

@@ -1,10 +1,12 @@
 <?php
 return array(
     // This should be an array of module namespaces used in the application.
-    'modules' => array(
+    /*'modules' => array(
         'Application',
         'Todo',
-    ),
+        //'Api'
+    ),*/
+    'modules' => require __DIR__ . '/modules.config.php',
 
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(
@@ -28,20 +30,24 @@ return array(
         // If enabled, the merged configuration will be cached and used in
         // subsequent requests.
         //'config_cache_enabled' => $booleanValue,
+        'config_cache_enabled' => true,
 
         // The key used to create the configuration cache file name.
         //'config_cache_key' => $stringKey,
+        'config_cache_key' => 'application.config.cache',
 
         // Whether or not to enable a module class map cache.
         // If enabled, creates a module class map cache which will be used
         // by in future requests, to reduce the autoloading process.
         //'module_map_cache_enabled' => $booleanValue,
+        'module_map_cache_enabled' => true,
 
         // The key used to create the class map cache file name.
         //'module_map_cache_key' => $stringKey,
 
         // The path in which to cache merged configuration.
         //'cache_dir' => $stringPath,
+        'cache_dir' => 'data/cache/',
 
         // Whether or not to enable modules dependency checking.
         // Enabled by default, prevents usage of modules that depend on other modules

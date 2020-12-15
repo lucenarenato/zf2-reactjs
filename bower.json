@@ -1,8 +1,0 @@
-{
-  "name": "ZF2 App with Ember Demo",
-  "dependencies": {
-    "ember": "1.*",
-    "react": "^16.1.0",
-    "handlebars": "^4.7.6"
-  }
-}

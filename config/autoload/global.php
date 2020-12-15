@@ -12,6 +12,10 @@
  */
 
 return array(
+    /*'db' => [
+        'driver' => 'Pdo',
+        'dsn'    => sprintf('sqlite:%s/data/helloworld.db', realpath(getcwd())),
+    ],*/
     'db' => array(
          'driver'         => 'Pdo',
          'dsn'            => 'mysql:dbname=zf;host=localhost',

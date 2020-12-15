@@ -1,4 +1,11 @@
 <?php
+
+namespace Application;
+
+use Zend\Router\Http\Literal;
+use Zend\Router\Http\Segment;
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -72,6 +79,17 @@ return array(
                     ),
                 ),
             ),
+
+            'api' => array(
+                'type'    => 'Literal',
+                'options' => array(
+                    'route'    => '/api',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Api',
+                        'action'        => 'index',
+                    ),
+                ),
+            ),
         ),
     ),
     'service_manager' => array(
@@ -101,6 +119,7 @@ return array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
             'Application\Controller\Contact' => 'Application\Controller\ContactController',
             'Application\Controller\About' => 'Application\Controller\AboutController',
+            'Application\Controller\Api' => 'Application\Controller\ApiController',
         ),
     ),
     'view_manager' => array(
